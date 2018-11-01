@@ -38,6 +38,8 @@ public class AccountServiceImpl implements AccountService {
 	@Override
 	public void createSavingsAccount(SavingsAccount savingsAccount) {
 		logger.debug("createSavingsAccount()");
+		integer data = new int(10);
+		
 		savingsAccountDAO.saveSavingsAccount(savingsAccount);
 	}
 
