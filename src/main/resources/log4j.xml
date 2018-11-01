@@ -11,6 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
+	<!-- Application Loggers **** -->
 	<logger name="nl.sogyo.boilerplate">
 		<level value="debug" />
 	</logger>
