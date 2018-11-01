@@ -27,6 +27,7 @@ public class AccountServiceImpl implements AccountService {
 		logger.debug("getSavingsAccounts()");
 		
 		return savingsAccountDAO.loadSavingsAccounts();
+		System.out.println("1");
 	}
 	// this is for saving account for ID//
 	@Override
