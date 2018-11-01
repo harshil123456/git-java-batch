@@ -25,9 +25,11 @@ public class AccountServiceImpl implements AccountService {
 	@Override
 	public List<SavingsAccount> getSavingsAccounts() {
 		logger.debug("getSavingsAccounts()");
+		
 		return savingsAccountDAO.loadSavingsAccounts();
+		System.out.println("1");
 	}
-
+	// this is for saving account for ID//
 	@Override
 	public SavingsAccount getSavingsAccount(int accountId) {
 		logger.debug("getSavingsAccount()");
@@ -38,6 +40,8 @@ public class AccountServiceImpl implements AccountService {
 	@Override
 	public void createSavingsAccount(SavingsAccount savingsAccount) {
 		logger.debug("createSavingsAccount()");
+		integer data = new int(10);
+		
 		savingsAccountDAO.saveSavingsAccount(savingsAccount);
 	}
 
