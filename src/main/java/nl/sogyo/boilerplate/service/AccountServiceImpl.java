@@ -25,6 +25,7 @@ public class AccountServiceImpl implements AccountService {
 	@Override
 	public List<SavingsAccount> getSavingsAccounts() {
 		logger.debug("getSavingsAccounts()");
+		
 		return savingsAccountDAO.loadSavingsAccounts();
 	}
 
