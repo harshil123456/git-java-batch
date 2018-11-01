@@ -43,7 +43,7 @@ public class AccountServiceImpl implements AccountService {
 
 	@Override
 	public void updateSavingsAccount(int accountId, SavingsAccount savingsAccount) {
-		logger.debug("createSavingsAccount()");
+		logger.debug("createSavingsAccount()"+"Inside Logger Debug");
 		savingsAccount.setAccountId(accountId);
 		savingsAccountDAO.saveSavingsAccount(savingsAccount);
 	}
