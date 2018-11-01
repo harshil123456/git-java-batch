@@ -1,4 +1,5 @@
 
+
 package nl.sogyo.boilerplate.service;
 
 import java.util.List;
@@ -15,4 +16,5 @@ public interface AccountService {
 	public void DELETESavingsAccount(int accountId, SavingsAccount savingsAccount);//delete by me
 
 }
+
 
