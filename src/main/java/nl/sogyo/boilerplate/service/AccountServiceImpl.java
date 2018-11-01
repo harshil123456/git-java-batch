@@ -34,6 +34,12 @@ public class AccountServiceImpl implements AccountService {
 		SavingsAccount savingsAccount = savingsAccountDAO.getSavingsAccount(accountId);
 		return savingsAccount;
 	}
+	@Override
+	public SavingsAccount getSavingsAccount(int accountId) {
+		logger.debug("getSavingsAccount()");
+		SavingsAccount savingsAccount = savingsAccountDAO.getSavingsAccount(accountId);
+		return savingsAccount;
+	}
 
 	@Override
 	public void createSavingsAccount(SavingsAccount savingsAccount) {
