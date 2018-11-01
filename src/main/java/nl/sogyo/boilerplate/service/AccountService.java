@@ -10,4 +10,5 @@ public interface AccountService {
 	public SavingsAccount getSavingsAccount(int accountId);
 	public void createSavingsAccount(SavingsAccount savingsAccount);
 	public void updateSavingsAccount(int accountId, SavingsAccount savingsAccount);
+	System.out.println("Account Service");
 }
