@@ -38,6 +38,9 @@ public class HomeController {
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome home! the client locale is "+ locale.toString());
 		
+		///////
+		////Changes by Sidharth/////gjhgjhgj
+
 		model.addAttribute("serverTime", this.getFormattedDate(locale));
 		//model.addAttribute("serverTime", this.getSavingsAccounts());
 		
